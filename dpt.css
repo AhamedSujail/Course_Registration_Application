@@ -1,0 +1,54 @@
+/* Dropdown Menu Styling */
+  .dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: rgb(19, 104, 173);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    z-index: 1;
+    min-width: 200px; /* Dropdown width */
+}
+
+.dropdown-content a {
+    color: #008080;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: hsl(204, 78%, 37%); /* Highlight on hover */
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Add a down arrow next to dropdown links */
+.dropdown > a::after {
+    content: " ▼"; /* Down arrow symbol */
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.logout-button {
+    position: fixed; /* Fix position on the screen */
+    bottom: 100px;    /* Distance from the bottom */
+    right: 20px;     /* Distance from the right */
+    background-color: #008080; /* Button background color */
+    color: white;    /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none;    /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow */
+    transition: transform 0.3s ease; /* Smooth transformation */
+}
+
+.logout-button:hover {
+    animation: shake 0.5s; /* Apply shake animation */
+    animation-iteration-count: 1; /* Shake only once */
+}
+
